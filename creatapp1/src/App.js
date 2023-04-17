@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <h1>Hello World. Reacts</h1>
     <h2>Welcome {name} to our react crash course</h2>
+    <h2 className="App">Hi. This an h2 in React!</h2>
     </div>
     // <div className="contianer">
     //   <Header />
