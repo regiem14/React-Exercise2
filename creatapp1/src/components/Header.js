@@ -3,9 +3,13 @@ import React from 'react'
 const Header = ({title}) => {
     return (
         <header>
-            <h2 style= {{textAlign:'center'}}>
+            {/* <h2 style= {{textAlign:'center'}}>
                 {title}
-            </h2>
+            </h2> */}
+
+            <h1 style={{textAlign:'center'}}>
+                React To do list App
+            </h1>
         </header>
     )
 }
