@@ -1,8 +1,8 @@
- import Header from './components/Header.js';
+import Header from './components/Header.js';
 // import './App.css';
 
 function App() {
-  const name =  "regie";
+  // const name =  "regie";
   
   // const a = true;
   // const b = 5+5;
@@ -16,10 +16,12 @@ function App() {
     // <h2>{5+5}</h2>
     // <h2>{b}</h2>
     // </div>
+    // <div className="contianer">
+    //   <Header />
+    // </div>
 
-    
-    <div className="contianer">
-      <Header />
+    <div className="container">
+      <Header title="Hello Regie" />
     </div>
   );
 }
