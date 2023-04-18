@@ -1,16 +1,13 @@
 import Header from './components/Header.js';
 // import './App.css';
 import Button from './components/Button.js';
+import Tasks from './components/Tasks.js';
 function App() {
   // const name =  "regie";
   
   // const a = true;
   // const b = 5+5;
 
-  const clickEvent = () => {
-   alert('This is an example of on onclick Event!');
-    console.log('Alert test on console');   
-  }
   return (
     
     // <div className="container">
@@ -26,10 +23,8 @@ function App() {
     // </div>
 
     <div className="container">
-      <Header title={'Heading Test'}/>
-      <Button text='Add' color='green' clickEvent={clickEvent} />
-      <Button text='Delete' color='red' />
-      <Button text='About' />
+      <Header />
+      <Tasks />
 
     </div>
   );
