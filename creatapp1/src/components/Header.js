@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Header = ({title}) => {
     return (
-        <header>
+        <header className='header'>
 
             <h1 style={{textAlign:'center', backgroundColor:'yellow', color:'blue'}}>RMSL TO-DO-APP</h1>
 

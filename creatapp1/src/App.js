@@ -6,6 +6,11 @@ function App() {
   
   // const a = true;
   // const b = 5+5;
+
+  const clickEvent = () => {
+   alert('This is an example of on onclick Event!');
+    console.log('Alert test on console');   
+  }
   return (
     
     // <div className="container">
@@ -22,7 +27,7 @@ function App() {
 
     <div className="container">
       <Header title={'Heading Test'}/>
-      <Button text='Add' color='green' />
+      <Button text='Add' color='green' clickEvent={clickEvent} />
       <Button text='Delete' color='red' />
       <Button text='About' />
 
