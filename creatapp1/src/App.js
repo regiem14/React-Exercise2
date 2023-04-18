@@ -1,6 +1,6 @@
 import Header from './components/Header.js';
 // import './App.css';
-
+import Button from './components/Button.js';
 function App() {
   // const name =  "regie";
   
@@ -22,6 +22,10 @@ function App() {
 
     <div className="container">
       <Header title={'Heading Test'}/>
+      <Button text='Add' color='green' />
+      <Button text='Delete' color='red' />
+      <Button text='About' />
+
     </div>
   );
 }

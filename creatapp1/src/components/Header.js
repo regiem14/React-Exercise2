@@ -6,9 +6,6 @@ const Header = ({title}) => {
         <header>
 
             <h1 style={{textAlign:'center', backgroundColor:'yellow', color:'blue'}}>RMSL TO-DO-APP</h1>
-            <h2 style={h2Styles}>
-                {title}
-            </h2>
 
         </header>
     )
@@ -17,6 +14,7 @@ const Header = ({title}) => {
 Header.defaultProps = {
     title:"React to do list app"
 }
+
 
 Header.propTypes = {
     title: PropTypes.string
@@ -27,4 +25,6 @@ const h2Styles = {
     backgroundColor: 'red',
     color: 'green'
 }
+
+
 export default Header
