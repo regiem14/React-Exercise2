@@ -5,10 +5,10 @@ const Header = ({title}) => {
     return (
         <header>
 
-            <h1 style={{textAlign:'center'}}>RMSL TO-DO-APP</h1>
-            <h1 style={{textAlign:'center'}}>
+            <h1 style={{textAlign:'center', backgroundColor:'yellow', color:'blue'}}>RMSL TO-DO-APP</h1>
+            <h2 style={h2Styles}>
                 {title}
-            </h1>
+            </h2>
 
         </header>
     )
@@ -20,5 +20,11 @@ Header.defaultProps = {
 
 Header.propTypes = {
     title: PropTypes.string
+}
+
+const h2Styles = {
+    textAlign: 'center',
+    backgroundColor: 'red',
+    color: 'green'
 }
 export default Header

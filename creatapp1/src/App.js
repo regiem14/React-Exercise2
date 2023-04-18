@@ -21,7 +21,7 @@ function App() {
     // </div>
 
     <div className="container">
-      <Header title='tracker'/>
+      <Header title={'Heading Test'}/>
     </div>
   );
 }
