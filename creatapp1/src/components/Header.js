@@ -4,6 +4,7 @@ const Header = ({title}) => {
     return (
         <header>
 
+            <h1 style={{}}>RMSL TO-DO-APP</h1>
             <h1 style={{textAlign:'center'}}>
                 {title}
             </h1>

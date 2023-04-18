@@ -15,5 +15,12 @@ code {
 }
 
 .container {
-  text-align: center;
+  margin: 30px auto;
+  max-width: 400px;
+  min-height: 300px;
+  overflow: auto;
+  border: 1px solid rgb(8, 56, 96);
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f7d7b5;
 }
