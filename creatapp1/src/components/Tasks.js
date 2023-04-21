@@ -19,7 +19,7 @@ const task = [
     },
     {
         id: 4,
-        test: 'Watching mobiles',
+        text: 'Watching mobiles',
         day: 'April 21, 2023',
         reminder: false
     },
