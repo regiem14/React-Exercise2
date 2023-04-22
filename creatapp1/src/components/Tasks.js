@@ -7,7 +7,7 @@ const Tasks = ({tasklist}) => {
 
         // setTasks([...tasklist, {}])
         <>
-        {tasklist.map((tasklist)=>(<Task key={tasklist.id} />))}
+        {tasklist.map((tasklist)=>(<Task key={tasklist.id} tasklist={tasklist} />))}
         </>
     )
 }

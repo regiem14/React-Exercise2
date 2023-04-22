@@ -1,8 +1,9 @@
 
-const Task = () => {
+const Task = ({tasklist}) => {
   return (
     <div className='task'>
-        <h3>Daily Task</h3>
+        <h3>{tasklist.text}</h3>
+        <p>{tasklist.day}</p>
     </div>
   )
 }
