@@ -42,7 +42,8 @@ const deleteTask = (id) => {
 
 
 const toggleActive = (id) =>{
-  console.log(id);
+  // console.log(id);
+  setTasks(tasklist.map((tasklist)=>tasklist.id === id ? {...tasklist, reminder: !tasklist.reminder} : tasklist))
 }
 
   return (

@@ -64,7 +64,7 @@ code {
   cursor: pointer;
 }
 
-.task.activeReminder{
+.task.reminder{
   border-left: 10px solid rgb(6, 73, 6);
 }
 
