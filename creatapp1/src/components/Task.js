@@ -2,9 +2,9 @@ import React from "react";
 
 import {FaTimesCircle} from 'react-icons/fa';
 
-const Task = ({tasklist, onDelete}) => {
+const Task = ({tasklist, onDelete, onToggle}) => {
   return (
-    <div className='task'>
+    <div className='task' onDoubleClick={()=>onToggle(tasklist.id)} >
         <h3>{tasklist.text} <FaTimesCircle style={{color:'red', cursor:'pointer'}} onClick={onDelete} /></h3>
         <p className="task__para">{tasklist.day}</p>
     </div>

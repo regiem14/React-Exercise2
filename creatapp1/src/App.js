@@ -41,10 +41,14 @@ const deleteTask = (id) => {
 }
 
 
+const toggleActive = (id) =>{
+  console.log(id);
+}
+
   return (
     <div className="container">
       <Header />
-      {tasklist.length > 0 ? <Tasks tasklist={tasklist} onDelete={deleteTask} />: 'No Tasks to accomplish'}
+      {tasklist.length > 0 ? <Tasks tasklist={tasklist}  onDelete={deleteTask} onToggle={toggleActive} />: 'No Tasks to accomplish'}
 
     </div>
   );
