@@ -1,6 +1,7 @@
+import AddTask from './components/AddTask.js';
 import Header from './components/Header.js';
 import Tasks from './components/Tasks.js';
-import { useState} from 'react';
+import {useState} from 'react';
 
 function App() {
 
@@ -35,6 +36,11 @@ function App() {
 );
 
 
+const addTask = (task) => {
+  console.log(task);
+}
+
+
 const deleteTask = (id) => {
   alert('delte test' + id);
   console.log('This is a delete task code block function', id)
@@ -49,6 +55,7 @@ const toggleActive = (id) =>{
   return (
     <div className="container animate__heartBeat">
       <Header />
+      <AddTask onAdd={addTask} />
       {tasklist.length > 0 ? <Tasks tasklist={tasklist}  onDelete={deleteTask} onToggle={toggleActive} />: 'No Tasks to accomplish'}
 
     </div>

@@ -88,7 +88,7 @@ code {
 }
 
 .form__label{
-  display: none;
+  display: block;
 }
 
 .form__input{
@@ -109,7 +109,7 @@ code {
   flex: 1;
 }
 
-.form__check--check{
+.form__input--check{
   flex: 2;
   height: 20px;
 }
