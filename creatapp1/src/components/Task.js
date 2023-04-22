@@ -8,7 +8,7 @@ const Task = ({tasklist, onDelete, onToggle}) => {
     <div className={`task ${tasklist.reminder ? 'reminder' : ''}`} onDoubleClick={()=>onToggle(tasklist.id)} >
         <h3> 
         <FaTimesCircle style={{color:'red', cursor:'pointer'}} 
-        onClick={onDelete} />
+        onClick={() => onDelete(tasklist.id)} />
         {tasklist.text}
         </h3>
         <p className="task__para">{tasklist.day}</p>

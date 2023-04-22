@@ -44,7 +44,7 @@ function App() {
   const deleteTask = (id) => {
     // alert('delte test' + id);
     // console.log('This is a delete task code block function', id)
-    // setTasks(tasklist.filter((tasklist) => tasklist.id !== id));
+    setTasks(tasklist.filter((tasklist) => tasklist.id !== id));
   };
 
   const toggleActive = (id) => {
