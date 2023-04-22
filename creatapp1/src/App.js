@@ -20,7 +20,7 @@ function App() {
   
 
     const fetchTasks = async()=>{
-      const res = await fetch('https://localhost:5000/tasks')
+      const res = await fetch('http://localhost:5000/tasks')
       const data = await res.json();
       return data
     }
@@ -34,9 +34,18 @@ function App() {
     setTasks([...tasklist, newTask]);
   };
 
-  const deleteTask = (id) => {
+
+
+  /*const deleteTask = (id) => {
     // alert('delte test' + id);
     // console.log('This is a delete task code block function', id)
+    setTasks(tasklist.filter((tasklist) => tasklist.id !== id));
+  };*/
+
+  const deleteTask = async (id) => {
+    await fetch(`http://localhost:5000/tasks/${id}`,{
+    method: 'DELETE'
+  })
     setTasks(tasklist.filter((tasklist) => tasklist.id !== id));
   };
 
