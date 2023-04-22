@@ -1,9 +1,12 @@
+import React from "react";
 
-const Task = ({tasklist}) => {
+import {FaTimesCircle} from 'react-icons/fa';
+
+const Task = ({tasklist, onDelete}) => {
   return (
     <div className='task'>
-        <h3>{tasklist.text}</h3>
-        <p>{tasklist.day}</p>
+        <h3>{tasklist.text} <FaTimesCircle style={{color:'red', cursor:'pointer'}} onClick={onDelete} /></h3>
+        <p className="task__para">{tasklist.day}</p>
     </div>
   )
 }

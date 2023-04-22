@@ -35,10 +35,16 @@ function App() {
 );
 
 
+const deleteTask = (id) => {
+  alert('delte test' + id);
+  console.log('This is a delete task code block function', id)
+}
+
+
   return (
     <div className="container">
       <Header />
-      <Tasks tasklist={tasklist} />
+      {tasklist.length > 0 ? <Tasks tasklist={tasklist} onDelete={deleteTask} />: 'No Tasks to accomplish'}
 
     </div>
   );

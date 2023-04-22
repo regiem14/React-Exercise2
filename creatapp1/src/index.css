@@ -74,8 +74,8 @@ code {
   justify-content: space-between;
 }
 
-p{
-  padding: 0 30px;
+.task__para{
+  padding: 0 10px;
 }
 
 
