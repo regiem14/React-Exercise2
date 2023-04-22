@@ -11,7 +11,7 @@ const Header = ({title, onAdd, showAdd}) => {
     return (
         <header className='header'>
 
-            <h1 style={{textAlign:'center', backgroundColor:'yellow', color:'blue'}}>RMSL TO-DO-APP</h1>
+            <h1 style={{textAlign:'left'}}>RMSL TO-DO-APP</h1>
             <Button text={showAdd ? 'Add tasks' : 'Close'} color={showAdd ? 'green' : 'red'} onClick={onAdd}  />
             {/* <Button text='Delete' color='red' />
             <Button text='About' /> */}
