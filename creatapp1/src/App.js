@@ -26,21 +26,33 @@ function App() {
     }
 
 
-  const addTask = (task) => {
+/*  const addTask = (task) => {
     // console.log(task);
     const id = Math.floor(Math.random() * 10000) + 1;
     // console.log(id);
     const newTask = { id, ...task };
     setTasks([...tasklist, newTask]);
-  };
+  };*/
 
+  const addTask = async (task) => {
+    const res = await fetch('http://localhost:5000/tasks',{
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(task)
+    })
 
+    const data = await res.json()
+    
+    setTasks([...tasklist.tasks, data]);
+  }
 
   /*const deleteTask = (id) => {
     // alert('delte test' + id);
     // console.log('This is a delete task code block function', id)
     setTasks(tasklist.filter((tasklist) => tasklist.id !== id));
-  };*/
+  };*/  
 
   const deleteTask = async (id) => {
     await fetch(`http://localhost:5000/tasks/${id}`,{
