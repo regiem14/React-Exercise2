@@ -5,14 +5,14 @@ import PropTypes from 'prop-types'
 
 const Header = ({title, onAdd, showAdd}) => {
     
-  const clickEvent = () => {
-    alert('This is an example of on onclick Event!');
-     console.log('Alert test on console');}
+//   const clickEvent = () => {
+//     alert('This is an example of on onclick Event!');
+//      console.log('Alert test on console');}
     return (
         <header className='header'>
 
             <h1 style={{textAlign:'center', backgroundColor:'yellow', color:'blue'}}>RMSL TO-DO-APP</h1>
-            <Button text={showAdd ? 'Close' : 'Add tasks'} color='green' onClick={onAdd}  />
+            <Button text={showAdd ? 'Add tasks' : 'Close'} color={showAdd ? 'green' : 'red'} onClick={onAdd}  />
             {/* <Button text='Delete' color='red' />
             <Button text='About' /> */}
 

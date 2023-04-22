@@ -60,17 +60,9 @@ function App() {
 
   return (
     <div className="container animate__heartBeat">
-      <Header onAdd={()=>setShowAddTask(!showAddTask)}/>
+      <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask}/>
       {showAddTask && <AddTask onAdd={addTask} />}
-      {tasklist.length > 0 ? (
-        <Tasks
-          tasklist={tasklist}
-          onDelete={deleteTask}
-          onToggle={toggleActive}
-        />
-      ) : (
-        "No Tasks to accomplish"
-      )}
+      {tasklist.length > 0 ?<Tasks tasklist={tasklist} onDelete={deleteTask} onToggle={toggleActive}/> : "No Tasks accomplish"}
     </div>
   );
 }
