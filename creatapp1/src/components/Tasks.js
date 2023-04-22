@@ -1,4 +1,23 @@
-const task = [
+import Task from "./Task"
+
+const Tasks = ({tasklist}) => {
+
+   
+    return (
+
+        // setTasks([...tasklist, {}])
+        <>
+        {tasklist.map((tasklist)=>(<Task key={tasklist.id} />))}
+        </>
+    )
+}
+
+export default Tasks
+
+
+
+
+/*const task = [
     {
         id: 1,
         text: 'Watch Memes',
@@ -29,12 +48,9 @@ const task = [
 const Tasks = () => {
     return (
         <>
-        {
-            task.map((task)=>(<h3>{task.text}</h3>))
-        }
+        {task.map((task)=>(<h3 key={task.id}>{task.text}</h3>))}
         </>
     )
 }
 
-export default Tasks
-
+export default Tasks*/
