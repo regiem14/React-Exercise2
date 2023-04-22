@@ -47,7 +47,7 @@ const toggleActive = (id) =>{
 }
 
   return (
-    <div className="container">
+    <div className="container animate__heartBeat">
       <Header />
       {tasklist.length > 0 ? <Tasks tasklist={tasklist}  onDelete={deleteTask} onToggle={toggleActive} />: 'No Tasks to accomplish'}
 
